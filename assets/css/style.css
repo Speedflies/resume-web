@@ -14,6 +14,10 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #B28A31;
+}
+
 
 .ui-menu-color-home {
     background-color: #2B437D;
@@ -65,12 +69,16 @@ h4 {
     padding: 0 30px 30px;
 }
 
+
+.history-heading,
 .section-heading {
     font-family: "Exo" sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
+
 
 
 
@@ -167,7 +175,7 @@ header {
 
 .hvr-sweep-to-bottom:before {
     background-color: rgb(0, 0, 0, 0.2);
-    transition-duration: 0.25s;
+    transition-duration: 0.35s;
     height: 120px;
 
 }
@@ -187,7 +195,7 @@ footer {
     color: #fafafa;
     text-align: center;
     padding-left: 5px;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -293,4 +301,57 @@ footer {
     padding-top: 2px 20px;
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2)
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+
+/*----------------------------------Work history */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2em;
+    position: absolute;
+    left: -6px;
+    border-radius: 50%;
+    content: '';
+    background-color: #fafafa
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
